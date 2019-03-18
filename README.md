@@ -4,5 +4,5 @@ TV Model Code application is a tool for checking and displaying basic informatio
 
 ![alt text](res/ink.png "TV Model Code application")
 
-## motivations
+## Motivations
 Motivation is to make application which allows to quickly check details such us releasing market, year, model group etc.
