@@ -12,3 +12,8 @@ TV Model Code application allows for displaying the information based on the pro
 Once TV model code is provided, a screen with basic TV information is displayed.
 
 ![alt text](res/ink2.png "TV Model Code application")
+
+## Authors
+- *Emilia Buda* - https://github.com/kyyiamorten
+
+- *Adam Bodek* - https://github.com/adamo222
