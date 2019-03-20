@@ -17,3 +17,5 @@ Once TV model code is provided, a screen with basic TV information is displayed.
 - *Emilia Buda* - https://github.com/kyyiamorten
 
 - *Adam Bodek* - https://github.com/adamo222
+
+- *Damian Rzepiejewski* - https://github.com/DymPL
