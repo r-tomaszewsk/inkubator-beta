@@ -1,0 +1,49 @@
+body{
+    background-image: url("background.jpg");
+}
+
+input{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 7%;
+    font-size: 48px;
+    background-color: rgba(252,252,252, 0.5);
+    color:rgb(218, 215, 230);
+}
+
+header{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 7%;
+    font-size: 48px;
+    text-align: center;
+    color: black;
+}
+
+ button {
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    background-color: gray;
+    width: 15%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+#buttonInput {
+    left: 60%;
+    top: 70%;
+}
+
+#buttonShow {
+    left: 42%;
+    top: 70%;
+}
