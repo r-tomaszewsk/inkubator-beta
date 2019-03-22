@@ -4,7 +4,8 @@
   "description": "TV Model Code application is a tool for checking and displaying basic information about the TV. Application displayes information based on the provided model code of the TV.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "gulp copy"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/r-tomaszewsk/inkubator-beta#readme",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^5.15.3"
+    "eslint": "^5.15.3",
+    "gulp": "^4.0.0"
   }
 }
