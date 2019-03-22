@@ -22,7 +22,8 @@ header{
     height: 7%;
     font-size: 48px;
     text-align: center;
-    color: black;
+    font-weight: bold;
+    color: white;
 }
 
  button {
