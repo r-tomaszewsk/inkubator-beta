@@ -47,3 +47,42 @@ header{
     left: 42%;
     top: 70%;
 }
+
+#buttonBack {
+    left: 42%;
+    top: 70%;
+}
+
+.displayData {
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#screenSize {
+    top: 0;
+    left: 0;
+}
+
+#year {
+    top: 0;
+    right: 0;
+}
+
+#region {
+    bottom: 0;
+    left: 0;
+}
+
+#series {
+    bottom: 0;
+    right: 0;
+}
+
+#matrixType {
+    left: 45%;
+    top: 50%;
+}
