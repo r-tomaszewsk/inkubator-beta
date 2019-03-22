@@ -13,7 +13,6 @@ input{
     background-color: rgba(252,252,252, 0.5);
     color:rgb(218, 215, 230);
 }
-
 header{
     position: absolute;
     left: 50%;
@@ -47,3 +46,7 @@ header{
     left: 42%;
     top: 70%;
 }
+#second{
+    display: none;
+}
+
