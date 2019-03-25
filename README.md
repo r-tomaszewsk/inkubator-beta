@@ -19,3 +19,8 @@ Once TV model code is provided, a screen with basic TV information is displayed.
 - *Adam Bodek* - https://github.com/adamo222
 
 - *Damian Rzepiejewski* - https://github.com/DymPL
+
+## Setup
+
+- Download *authors.p12*
+- Password: Samsung123
