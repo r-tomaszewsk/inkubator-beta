@@ -5,6 +5,7 @@ function copy() {
     './**/*'
     ,'!./node_modules'   
     ,'!./node_modules/**/*'
+    ,'!.gitignore'
   ])
   .pipe(dest('./export/'));
 }
