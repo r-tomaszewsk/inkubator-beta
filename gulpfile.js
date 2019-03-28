@@ -6,6 +6,7 @@ function copy() {
     ,'!./node_modules'   
     ,'!./node_modules/**/*'
     ,'!.gitignore'
+    // ,'!builder.bat'
   ])
   .pipe(dest('./export/'));
 }
