@@ -1,3 +1,5 @@
+app.nav.init();
+
 const buttonInput = document.querySelector("#buttonInput");
 const buttonShow = document.querySelector("#buttonShow");
 const buttonBack = document.querySelector("#buttonBack");
@@ -39,3 +41,4 @@ buttonBack.addEventListener("click", function() {
     home.style.display = "block";
     second.style.display = "none";
 })
+
