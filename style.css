@@ -92,3 +92,11 @@ header{
     left: 45%;
     top: 50%;
 }
+
+/*
+    navigation 
+*/
+
+.active {
+    background-color: lightskyblue;
+}
