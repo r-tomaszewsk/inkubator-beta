@@ -19,6 +19,7 @@
   "homepage": "https://github.com/r-tomaszewsk/inkubator-beta#readme",
   "dependencies": {},
   "devDependencies": {
+    "del": "^4.0.0",
     "eslint": "^5.15.3",
     "gulp": "^4.0.0"
   }
