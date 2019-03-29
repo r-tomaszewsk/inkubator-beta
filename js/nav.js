@@ -10,7 +10,7 @@ window.app.nav = function(tizen) {
      * DOWN_ARROW_BUTTON - select button key code
      */
     const RETURN_BUTTON = 10009,
-        // SELECT_BUTTON = 13,
+        SELECT_BUTTON = 13,
         LEFT_ARROW_BUTTON = 37,
         UP_ARROW_BUTTON = 38,
         RIGHT_ARROW_BUTTON = 39,
@@ -47,9 +47,11 @@ window.app.nav = function(tizen) {
             // case RETURN_BUTTON:
             //     tizen && tizen.application.getCurrentApplication().exit();
             //     break;
-            // case SELECT_BUTTON:
-            //     // log('select ' + e.keyCode);
-            //     break;
+            case SELECT_BUTTON:
+                // log('select ' + e.keyCode);
+                app.onEnter.execute(document.querySelector("." + ACTIVE_CSS_CLASS));
+                e.preventDefault();
+                break;
             case DOWN_ARROW_BUTTON:
             case RIGHT_ARROW_BUTTON:
                 goToNextElem(1);
