@@ -4,7 +4,7 @@
 	<name>InkubatorBeta</name>
 	<icon src="res/icon.png"/>
 	<tizen:privilege name="http://tizen.org/privilege/application.launch"/>
-	<content src="index.html"/>
+	<content src="index2.html"/>
 	<feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
 	<tizen:metadata key="http://samsung.com/tv/metadata/prelaunch.support" value="true"/>
 	<tizen:profile name="tv-samsung"/>
