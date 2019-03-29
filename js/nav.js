@@ -62,6 +62,12 @@ window.app.nav = function(tizen) {
                 goToNextElem(-1);
                 e.preventDefault();
                 break;
+            case 65376: // Done
+                document.getElementById('inputModelCode').blur();
+                break;
+            case 65385: // Cancel
+                document.getElementById('inputModelCode').blur();
+                break;
             default:
                 console.warn('unknown keyCode: ' + e.keyCode);
         }
@@ -103,6 +109,10 @@ window.app.nav = function(tizen) {
 
         if (!activeElem) {
             if (activeElem = getActiveElement('[tabindex]')) {
+                let elemFix = document.querySelector('.' + ACTIVE_CSS_CLASS)
+                if (elemFix) {
+                    elemFix.classList.remove(ACTIVE_CSS_CLASS);
+                }
                 activeElem.classList.add(ACTIVE_CSS_CLASS);
             } else {
                 console.warn('no navigation elements found!');
@@ -129,7 +139,8 @@ window.app.nav = function(tizen) {
     }
 
     function isNavigable(elem) {
-        return (elem && (elem.offsetWidth > 0) && (elem.offsetHeight > 0) && !elem.hasAttribute('disabled'));
+        return (elem && (elem.offsetWidth > 0) && (elem.offsetHeight > 0) && !elem.hasAttribute('disabled')
+            && ((elem.closest('.page').offsetWidth > 0) || (elem.closest('.page').offsetHeight > 0)));
     }
 
     function determinMaxTabIndex() {
