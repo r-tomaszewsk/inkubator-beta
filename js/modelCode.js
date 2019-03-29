@@ -1,7 +1,7 @@
 window.app = window.app || {};
 window.app.modelCode = function(codes) {
     'use strict'
-    const minModelCodeLength = 11,
+    const minModelCodeLength = 10,
         qLedTvConfig = ['region', 'screenSize', 'series'],
         standardTVConfig = ['region', 'screenSize', 'year', 'matrixType', 'series', 'digitalTuner'];
     
@@ -79,6 +79,7 @@ window.app.modelCode = function(codes) {
             if (deviceType.code === 'Q') { // QDOT TV
                 serialModelInfo = serialPositionParser(modelCode, [deviceType].concat(qLedTvConfig))
             } else { // regular TV or unknown TV
+                if (modelCode.length < 11) modelCode += 'a';
                 serialModelInfo = serialPositionParser(modelCode, [deviceType].concat(standardTVConfig));
             }
             return serialModelInfo;

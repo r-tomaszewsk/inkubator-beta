@@ -36,7 +36,19 @@ window.app.onEnter = function(){
         second.style.display = "block";
     }
     function onButtonShow() {
-        console.log("my model");
+        let currentModelCode = webapis.productinfo.getRealModel();
+        console.log(currentModelCode);
+        let result = app.modelCode.parse(currentModelCode);
+        console.log(result);
+
+        displayResults.screenSize.innerHTML = result.screenSize.name;
+        displayResults.year.innerHTML = result.year.name;
+        displayResults.region.innerHTML = result.region.name;
+        displayResults.series.innerHTML = result.series.name;
+        displayResults.matrixType.innerHTML = result.matrixType.name;
+
+        home.style.display = "none";
+        second.style.display = "block";
     }
     function onButtonBack() {
         home.style.display = "block";
@@ -57,7 +69,7 @@ window.app.onEnter = function(){
                     onButtonInput();
                     break;
                 case "buttonShow": 
-                    onButtonShow()
+                    onButtonShow();
                     break;               
                 case "buttonBack":
                     onButtonBack()
